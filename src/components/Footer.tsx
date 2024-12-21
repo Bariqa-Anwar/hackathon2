@@ -25,14 +25,14 @@ export default function Footer() {
             <div>
               <form className="flex rounded-full overflow-hidden">
                 <button
-                  className="px-4 py-2 bg-white text-zinc-400 flex items-center justify-center focus:outline-none "
+                  className="px-2 py-2 bg-white text-zinc-400 flex items-center justify-center focus:outline-none "
                 >
                   <RiRectangleFill className="text-lg" />
                 </button>
                 <input
                   type="text"
                   placeholder="Enter your email address"
-                  className="flex-grow text-left font-bold placeholder:text-zinc-400 px-1 py-2 focus:outline-none"
+                  className="flex-grow text-left font-bold placeholder:text-zinc-400  py-2 focus:outline-none"
                 />
               </form>
               <button className="bg-white text-black px-4 py-2 rounded-full w-full mt-3">
@@ -44,7 +44,8 @@ export default function Footer() {
           <div className="-mt-40 lg:-mt-20 pt-44 lg:pt-32 lg:px-20 bg-customGray bottom-0">
             <div className="flex-none lg:flex justify-around mb-10">
               <div className="px-4 sm:px-20 md:px-40 lg:px-0">
-                <h1 className="text-4xl font-extrabold">SHOP.CO</h1>
+                <h1 className="text-4xl font-extrabold">
+                SHOP.CO</h1>
                 <p className="text-left lg:w-[50%] text-zinc-600  mt-5">
                   We have cloths that suits your style and which you&apos;re
                   proud to wear.From women to men.

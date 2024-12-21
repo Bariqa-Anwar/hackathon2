@@ -5,11 +5,21 @@ import { ShoppingCart } from "lucide-react";
 import { CircleUserRound } from "lucide-react";
 import { AlignJustify } from "lucide-react";
 import { X } from "lucide-react";
+"Use Cleint"
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
 
 export default function Navbar(){
     return(
         <>
-        <nav className="overflow-x-hidden">
+        <nav className="overflow-x-hidden max-w-screen-2xl mx-auto">
           {/* Black Navbar */}
             <div className="bg-black flex text-white text-xs font-extralight h-9 w-screen py-3 xs:px-5 smCustom:px-10 sm:text-sm">
                 <h1 className="sm:ml-14 md:ml-32 md:-mt-1 lg:ml-56 xl:ml-96"> 
@@ -22,7 +32,20 @@ export default function Navbar(){
             </div>
             {/* Main Navbar */}
             <div className="flex xl:gap-2 lg:h-20">
-            <AlignJustify className="h-7 mt-3 ml-2 md:h-12 md:mt-5 lg:hidden"/>
+              <div className="lg:hidden">
+            <Sheet>
+  <SheetTrigger><AlignJustify className="h-7 mt-3 ml-2 md:h-12 md:mt-5"/></SheetTrigger>
+  <SheetContent className="bg-customGray text-lg font-medium hover:underline">
+   <ul>
+    <li className="mt-12 flex flex-col"><Link  href="/">Shop</Link>
+    <Link className="mt-6" href="/"> On Sale</Link>
+    <Link className="mt-6" href="/"> New Arrivals</Link>
+    <Link className="mt-6" href="/">Brands</Link>
+    </li>
+    </ul>
+  </SheetContent>
+</Sheet>
+</div>
               <h1 className="text-2xl font-extrabold ml-2 mt-3 xs:ml-3 md:text-3xl md:mt-6 md:ml-3 lg:ml-20 xl:text-4xl 
               xl:font-sans xl:ml-24"> 
               SHOP.CO 
@@ -40,7 +63,7 @@ export default function Navbar(){
             href="/arrivals">New Arrivals
             </Link>
             <Link className="hidden lg:block mt-8 ml-5 xl:ml-8 xl:mt-9 font-sans hover:underline" 
-            href="/brands">Brands
+            href="...">Brands
             </Link>
             {/* search icon */}
             <Search className="mt-4 ml-16 xs:ml-20 smCustom:ml-32 sm:h-5 sm:w-5 sm: text-gray-600 sm:absolute sm:right-80
