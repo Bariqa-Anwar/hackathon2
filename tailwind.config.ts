@@ -24,6 +24,7 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+			olive: '#4F4631',
 			customGray: 'rgba(242, 240, 241, 1)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

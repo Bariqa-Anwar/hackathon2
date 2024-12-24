@@ -25,7 +25,7 @@ export default function Footer() {
             <div>
               <form className="flex rounded-full overflow-hidden">
                 <button
-                  className="px-2 py-2 bg-white text-zinc-400 flex items-center justify-center focus:outline-none "
+                  className="px-2 py-2 bg-white text-zinc-400 flex items-center justify-center focus:outline-none"
                 >
                   <RiRectangleFill className="text-lg" />
                 </button>
