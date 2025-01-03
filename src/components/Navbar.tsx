@@ -28,7 +28,7 @@ export default function Navbar(){
                 <button className="text-xs font-light hover:underline sm:text-sm md:-mt-1 md:ml-3"> Sign Up Now
                 </button>
                 {/* X icon */}
-            <X className="hidden sm:block h-5 w-4 sm:ml-28 md:ml-36 md:-mt-1 lg:ml-72 xl:ml-96"/>
+            <X className="hidden sm:block h-5 w-4 sm:ml-32 md:ml-36 md:-mt-1 lg:ml-[320px] xl:ml-[400px]"/>
             </div>
             {/* Main Navbar */}
             <div className="flex xl:gap-2 lg:h-20">
@@ -37,10 +37,10 @@ export default function Navbar(){
   <SheetTrigger><AlignJustify className="h-7 mt-3 ml-2 md:h-12 md:mt-5"/></SheetTrigger>
   <SheetContent className="bg-customGray text-lg font-medium hover:underline">
    <ul>
-    <li className="mt-12 flex flex-col"><Link  href="/">Shop</Link>
+    <li className="mt-12 flex flex-col"><Link  href="/detail">Shop</Link>
     <Link className="mt-6" href="/"> On Sale</Link>
-    <Link className="mt-6" href="/"> New Arrivals</Link>
-    <Link className="mt-6" href="/">Brands</Link>
+    <Link className="mt-6" href="/category"> New Arrivals</Link>
+    <Link className="mt-6" href="/category">Brands</Link>
     </li>
     </ul>
   </SheetContent>
@@ -50,9 +50,10 @@ export default function Navbar(){
               xl:font-sans xl:ml-24"> 
               SHOP.CO 
               </h1>
+              <Link href="/detail">
               <h1 className="hidden lg:block ml-8 mt-8 font-sans hover:underline hover:cursor-pointer xl:ml-6 xl:mt-9">
                 Shop
-              </h1> 
+              </h1> </Link>
                 {/* icon */}
             <ChevronDown className="hidden lg:block w-6 ml-0 mt-10 h-4 xl:mt-11 xl:-ml-2 xl:h-4" />
               {/* Menu */}
@@ -60,26 +61,26 @@ export default function Navbar(){
             href="/"> On Sale
             </Link>
             <Link className="hidden lg:block mt-8 ml-5 xl:ml-6 xl:mt-9 font-sans hover:underline" 
-            href="/arrivals">New Arrivals
+            href="/category">New Arrivals
             </Link>
             <Link className="hidden lg:block mt-8 ml-5 xl:ml-8 xl:mt-9 font-sans hover:underline" 
-            href="...">Brands
+            href="/detail">Brands
             </Link>
             {/* search icon */}
-            <Search className="mt-4 ml-16 xs:ml-20 smCustom:ml-32 sm:h-5 sm:w-5 sm: text-gray-600 sm:absolute sm:right-80
-            sm:mt-5 md:mt-8 md:-mr-10 lg:mr-20 lg:mt-9 xl:mt-10 xl:-mr-20"/>
+            <Search className="mt-4 ml-16 text-black font-bold xs:ml-20 smCustom:ml-32 sm:h-5 sm:w-5 sm:text-gray-600 sm:absolute sm:right-[19.9rem]
+            sm:mt-5 md:mt-8 md:mr-[13rem] lg:mr-20 lg:mt-9 xl:mt-10 xl:-mr-20"/>
             {/* input */}
             <input
             type="text"
             placeholder="Search for products..."
             className="hidden sm:block border border-gray-200 rounded-full shadow-sm placeholder-gray-500 bg-gray-200
             focus:outline-none focus:ring focus:ring-indigo-100 w-60 h-9 placeholder:font-sans 
-            placeholder:font-extrabold mt-4 ml-36 px-8 md:mt-6 md:ml-8 md:w-80 lg:px-9 lg:mt-7 lg:ml-11 xl:mt-7 xl:h-11 xl:w-[450px]"
+            mt-3 ml-36 px-8 md:mt-6 md:ml-8 md:w-80 lg:px-9 lg:mt-7 lg:ml-11 xl:mt-7 xl:h-11 xl:w-[450px]"
             />
             {/* cart icon */}
-            <ShoppingCart className="mt-4 ml-6 md:mt-8 md:ml-24 lg:ml-1 xl:mt-10"/>
+            <Link href="/cart"><ShoppingCart className="mt-4 ml-6 md:mt-8 md:ml-24 lg:ml-1 xl:mt-10"/></Link>
             {/* user icon */}
-            <CircleUserRound className="mt-4 ml-5 sm:mr-5 md:mt-8 md:ml-8 lg:ml-2 xl:mt-10"/>   
+            <CircleUserRound className="mt-4 ml-3 sm:mr-5 md:mt-8 md:ml-8 lg:ml-2 xl:mt-10"/>   
            </div>
         </nav>
         </>

@@ -111,9 +111,10 @@ export default function Detail(){
             <FiMinus/>1<FaPlus /></button>
             </div>
             <div>
+                <Link href="/cart">
             <button className="border-gray-200 bg-gray-200 hover:bg-black hover:text-white rounded-full text-sm h-10 w-48 mt-5
             lg:w-56 xl:h-11 xl:w-96 xl:text-lg">
-            Add to Cart</button>
+            Add to Cart</button></Link>
            </div>
            </div>
            </div>

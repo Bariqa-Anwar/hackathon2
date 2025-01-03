@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 
 export default function Header () {
     return (
@@ -16,10 +16,12 @@ export default function Header () {
                     Browse through our diverse range of meticulously crafted garments, 
                     designed to bring out your individuality and cater to your sense of style.
                  </p>
+                 
+                 <Link href="/category">
                  <button className="border-black rounded-full bg-black text-white text-xs font-extrabold mx-4 mt-7 w-72 h-9 
                  xs:mx-11 smCustom:mx-16 sm:mx-40 sm:mt-8 md:mx-0 md:ml-12 md:w-40 md:font-light lg:text-sm lg:ml-20 xl:h-14 xl:w-56 ">
                 Shop Now
-                </button>
+                </button></Link>
                 <h1 className="flex font-bold mt-6 ml-9 text-xl xs:ml-14 smCustom:ml-16 sm:ml-40 md:hidden">
                 200+ 
                 <hr className="border-l-2 border-gray-200 h-14 w-0 ml-20 xs:ml-20 smCustom:ml-24 md:hidden">

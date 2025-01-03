@@ -16,7 +16,7 @@ export default function Arrivals (){
             </div>
             {/* images */}
         <div className="flex justify-around gap-2 ml-3 mt-7 md:gap-0">
-            <Link href="/Detail.tsx">
+            <Link href="/detail.tsx">
                 <Image className="w-44 h-40 border rounded-xl lg:w-52 lg:h-48 xl:h-72 xl:w-64"
                 src="/images/arrival1.png"
                 alt="shirt" height={700} width={700}/>
@@ -111,9 +111,9 @@ export default function Arrivals (){
                 font-extrabold mt-1 ml-2">-30%</button>
             </div>
             <div className="md:mt-6">
-                <button className= "border rounded-full bg-white text-black font-semibold mx-4 mt-5 w-72 h-9 xs:mx-8 smCustom:mx-16sm:ml-48 md:w-44 md:h-11 md:text-sm md:mx-72 lg:ml-[420px] xl:ml-[590px]">
-                View All
-                </button>
+                <Link href="/category">
+                <button className= "border rounded-full bg-white text-black font-semibold mx-4 mt-5 w-72 h-9 xs:mx-8 smCustom:mx-16sm:ml-48 md:w-44 md:h-11 md:text-sm md:mx-72 lg:ml-[420px] xl:ml-[590px] hover:bg-black hover:text-white">
+                View All</button></Link>
                 <hr className="mt-10 w-72 h-0.5 ml-4 xs:ml-9 smCustom:ml-16 sm:ml-36 sm:w-96 sm:h-0.5 md:w-[600px] md:h-0.5 md:mx-auto
                 xl:w-[900px]"></hr>
             </div>
@@ -201,8 +201,9 @@ export default function Arrivals (){
                 <p className="hidden md:block ml-48 lg:ml-60 xl:ml-[330px]">$210</p>
             </div>
             <div>
-            <button className= "border rounded-full bg-white text-black font-semibold mx-4 mt-6 w-72 h-9 xs:mt-6 xs:mx-11 smCustom:mx-16 sm:mx-48 md:w-44 md:h-11 md:text-sm md:mx-72 lg:ml-[430px] xl:ml-[590px]">
-            View All</button>
+                <Link href="/category">
+            <button className= "border rounded-full bg-white text-black font-semibold mx-4 mt-6 w-72 h-9 xs:mt-6 xs:mx-11 smCustom:mx-16 sm:mx-48 md:w-44 md:h-11 md:text-sm md:mx-72 lg:ml-[430px] xl:ml-[590px] hover:bg-black hover:text-white">
+            View All</button></Link>
             </div>
         </div>
 
